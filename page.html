@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Je suis $prenom à la NWS
-    hello
+<br>
+    $students
 
     <form method="POST" action="add.php">
-
         <label for="name">Nom de l'étudiant</label>
         <input type="text" name="name" id="name" />
         <label for="age">Age de l'étudiant</label>
         <input type="number" name="age" id="age" />
-
         <input value="Valider" type="submit"/>
-    </form>
+    </form></br>
+
+    <form method="POST" action="getStudent.php">
+        <label for="name">Nom de l'étudiant</label>
+        <input type="text" name="name" id="name" />
+        <input value="Valider" type="submit"/>
+    </form></br>
 </body>
 </html>
