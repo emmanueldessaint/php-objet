@@ -14,7 +14,18 @@ class StudentRepository
         ]);
     }
 
-    public static function GetStudent(Student $student) {
-        
+    public static function DeleteStudent($student) {
+        $query = GetPDO()->prepare("DELETE FROM students WHERE prenom = ?");
+        $query->execute([
+            $student,
+        ]);
+    }
+
+    public static function GetAllStudents($student) {
+        $query = GetPDO()->prepare("SELECT * FROM students WHERE prenom = ?")
+        ;
+        $query->execute([
+            $student,
+        ]);
     }
 }

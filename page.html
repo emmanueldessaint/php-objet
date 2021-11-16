@@ -7,20 +7,27 @@
     <title>Document</title>
 </head>
 <br>
-    $students
-
     <form method="POST" action="add.php">
+        <span>Ajouter un étudiant</span></br>
         <label for="name">Nom de l'étudiant</label>
         <input type="text" name="name" id="name" />
         <label for="age">Age de l'étudiant</label>
         <input type="number" name="age" id="age" />
         <input value="Valider" type="submit"/>
-    </form></br>
-
-    <form method="POST" action="getStudent.php">
-        <label for="name">Nom de l'étudiant</label>
-        <input type="text" name="name" id="name" />
+    </form></br></br>
+    
+    <form method="POST" action="delete.php">
+        <span>Supprimer un étudiant</span></br>
+        <label for="delete">Nom de l'étudiant</label>
+        <input type="text" name="delete" id="delete" />
         <input value="Valider" type="submit"/>
-    </form></br>
+    </form></br></br>
+
+    <form method="POST" action="getAllStudents.php">
+        <span>Récupérer tous les étudiants</span></br>
+        <label for="getAllStudents">Nom de l'étudiant</label>
+        <input type="text" name="getAllStudents" id="getAllStudents" />
+        <input value="Valider" type="submit"/>
+    </form></br></br>
 </body>
 </html>
